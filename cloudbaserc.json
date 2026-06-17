@@ -1,0 +1,23 @@
+{
+  "envId": "nuwaskill-web-d0gk8jpz633383aa7",
+  "version": "2.0",
+  "framework": {
+    "name": "nuwa-web",
+    "plugins": {
+      "container": {
+        "use": "@cloudbase/framework-plugin-container",
+        "inputs": {
+          "serviceName": "nuwa-web",
+          "servicePath": "/",
+          "dockerfilePath": "Dockerfile",
+          "containerPort": 8000,
+          "envVariables": {
+            "DEEPSEEK_API_KEY": "sk-7a748507560340ba9fe27c72d9cc403e",
+            "TAVILY_API_KEY": "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",
+            "LLM_MODEL": "deepseek-chat"
+          }
+        }
+      }
+    }
+  }
+}
